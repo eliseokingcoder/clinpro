@@ -198,3 +198,11 @@ blockquote.testimonial::before{content:'\201C';font-size:4rem;position:absolute;
 
 /* === Badges Group === */
 .badges{display:flex;gap:var(--space-8);justify-content:center;margin-top:var(--space-16);flex-wrap:wrap;}
+
+/* Diagnóstico de carga de CSS */
+.css-ok{
+  position:fixed;right:12px;bottom:12px;
+  background:var(--brand);color:#fff;
+  padding:.35rem .6rem;border-radius:999px;
+  font-size:.75rem;letter-spacing:.02em;opacity:.85
+}
