@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clínica Canadiense · Pediatría y desarrollo en Punta del Este</title>
-  <meta name="description" content="Atención pediátrica interdisciplinaria basada en evidencia en Punta del Este." />
+  <meta name="description" content="Atención pediátrica interdisciplinaria basada en evidencia en Punta del Este.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
         <a href="#servicios">Servicios</a>
         <a href="#casos">Casos</a>
         <a href="#equipo">Equipo</a>
-        <a href="#confianza">Confianza</a>
+        <a href="#testimonios">Testimonios</a>
         <a href="#faq">Preguntas</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -39,30 +39,26 @@
     <section id="servicios" class="section">
       <div class="container">
         <h2>Servicios</h2>
-        <div class="grid grid--2 grid--4">
+        <div class="grid grid--4">
           <div class="card">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D52B1E" stroke-width="2" fill="none"/></svg>
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#D52B1E" stroke-width="2" fill="none"/></svg>
             <h3>Pediatría</h3>
-            <p>Control y tratamiento integral.</p>
-            <a href="#">Ver detalle</a>
+            <p>Control integral del desarrollo.</p>
           </div>
           <div class="card">
-            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" stroke="#D52B1E" stroke-width="2" fill="none"/></svg>
-            <h3>Niño sano</h3>
-            <p>Controles periódicos de desarrollo.</p>
-            <a href="#">Ver detalle</a>
-          </div>
-          <div class="card">
-            <svg viewBox="0 0 24 24"><path d="M12 2v20" stroke="#D52B1E" stroke-width="2"/><path d="M5 12h14" stroke="#D52B1E" stroke-width="2"/></svg>
-            <h3>Vacunas</h3>
-            <p>Calendario completo y seguro.</p>
-            <a href="#">Ver detalle</a>
-          </div>
-          <div class="card">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" stroke="#D52B1E" stroke-width="2" fill="none"/></svg>
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16" stroke="#D52B1E" stroke-width="2"/><path d="M12 4v16" stroke="#D52B1E" stroke-width="2"/></svg>
             <h3>Fonoaudiología</h3>
-            <p>Evaluación y tratamiento del habla.</p>
-            <a href="#">Ver detalle</a>
+            <p>Desarrollo del lenguaje.</p>
+          </div>
+          <div class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#D52B1E" stroke-width="2" fill="none"/><path d="M8 12h8" stroke="#D52B1E" stroke-width="2"/></svg>
+            <h3>Psicomotricidad</h3>
+            <p>Estimulación corporal y cognitiva.</p>
+          </div>
+          <div class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20" stroke="#D52B1E" stroke-width="2"/><path d="M4 12h16" stroke="#D52B1E" stroke-width="2"/></svg>
+            <h3>Psicología</h3>
+            <p>Acompañamiento emocional.</p>
           </div>
         </div>
       </div>
@@ -72,7 +68,7 @@
       <div class="container">
         <h2>Casos frecuentes</h2>
         <ul class="grid">
-          <li class="chip">Fiebre y control de infecciones</li>
+          <li class="chip">Fiebre e infecciones</li>
           <li class="chip">Problemas respiratorios</li>
           <li class="chip">Alimentación y nutrición</li>
           <li class="chip">Desarrollo y estimulación</li>
@@ -83,20 +79,20 @@
 
     <section id="equipo" class="section">
       <div class="container">
-        <h2>Equipo</h2>
+        <h2>Nuestro equipo</h2>
         <div class="grid grid--3">
           <div class="pro">
-            <svg><rect width="100%" height="100%" fill="#E6E8EB"/></svg>
+            <svg viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="48" fill="#E6E8EB"/></svg>
             <h3>Dr. José Pérez</h3>
             <p class="pro__role">Pediatra · MP 12345</p>
           </div>
           <div class="pro">
-            <svg><rect width="100%" height="100%" fill="#E6E8EB"/></svg>
+            <svg viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="48" fill="#E6E8EB"/></svg>
             <h3>Dra. Ana Gómez</h3>
             <p class="pro__role">Fonoaudióloga · MP 67890</p>
           </div>
           <div class="pro">
-            <svg><rect width="100%" height="100%" fill="#E6E8EB"/></svg>
+            <svg viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="48" fill="#E6E8EB"/></svg>
             <h3>Lic. Laura Díaz</h3>
             <p class="pro__role">Psicóloga · MP 11121</p>
           </div>
@@ -104,15 +100,10 @@
       </div>
     </section>
 
-    <section id="confianza" class="section">
+    <section id="testimonios" class="section">
       <div class="container">
-        <h2>Confianza</h2>
+        <h2>Testimonios</h2>
         <blockquote class="testimonial">“Nos explicaron todo con paciencia y claridad.” — Familia S.</blockquote>
-        <div class="logos">
-          <svg aria-label="Alianza 1" width="80" height="40"><rect width="80" height="40" fill="#E6E8EB"/></svg>
-          <svg aria-label="Alianza 2" width="80" height="40"><rect width="80" height="40" fill="#E6E8EB"/></svg>
-          <svg aria-label="Alianza 3" width="80" height="40"><rect width="80" height="40" fill="#E6E8EB"/></svg>
-        </div>
       </div>
     </section>
 
@@ -165,27 +156,42 @@
           <li>WhatsApp: <a href="https://wa.me/5980000000">Escribir por WhatsApp</a></li>
           <li>Horario: Lunes a viernes de 9 a 18 h</li>
         </ul>
-        <div class="map" aria-label="Mapa de ubicación">Mapa</div>
+        <div class="map" aria-label="Mapa de ubicación">
+          <svg viewBox="0 0 24 24" aria-hidden="true" width="100%" height="100%">
+            <rect width="24" height="24" fill="#E6E8EB"/>
+            <path d="M12 2v20M2 12h20" stroke="#D52B1E" stroke-width="2"/>
+          </svg>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-cols">
+    <div class="container footer__inner">
       <div>
         <h3>Clínica Canadiense</h3>
-        <p>Pediatría y disciplinas asociadas en Punta del Este.</p>
+        <p>Pediatría de excelencia en Punta del Este.</p>
       </div>
-      <nav aria-label="Secundaria">
-        <ul>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#equipo">Equipo</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+      <nav aria-label="Secundaria" class="footer-nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
       </nav>
+      <div class="social">
+        <a href="#" aria-label="Facebook">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 8h2V6c0-.8.4-2 2-2h2v3h-2v2h2v3h-2v7h-3v-7H9V8z" fill="#5B616B"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="#5B616B" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" stroke="#5B616B" stroke-width="2" fill="none"/>
+          </svg>
+        </a>
+      </div>
       <div>
         <p><a href="#">Aviso legal</a></p>
-        <p><a href="#">Política de privacidad</a></p>
         <p>&copy; 2024 Clínica Canadiense</p>
       </div>
     </div>
