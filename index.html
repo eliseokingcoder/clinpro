@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clínica Canadiense · Pediatría y desarrollo en Punta del Este</title>
   <meta name="description" content="Atención pediátrica interdisciplinaria basada en evidencia en Punta del Este." />
   <link rel="stylesheet" href="styles.css">
@@ -11,16 +11,14 @@
   <a href="#contenido" class="skip-link">Saltar al contenido</a>
   <header class="header">
     <div class="container header__inner">
-      <a href="#" class="logo"><svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 0l3.09 7.36L24 8.52l-5.47 5.1L19.18 24 12 20.02 4.82 24l.65-10.38L0 8.52l8.91-1.16L12 0z"/></svg> Clínica Canadiense</a>
-      <nav class="nav" aria-label="Principal">
-        <ul>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#especialidades">Casos</a></li>
-          <li><a href="#equipo">Equipo</a></li>
-          <li><a href="#confianza">Confianza</a></li>
-          <li><a href="#faq">Preguntas</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+      <a href="#" class="logo">Clínica Canadiense</a>
+      <nav class="header__nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#casos">Casos</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#confianza">Confianza</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#contacto">Contacto</a>
       </nav>
       <a href="https://wa.me/5980000000" class="btn btn--primary">Pedir cita</a>
     </div>
@@ -28,18 +26,20 @@
 
   <main id="contenido">
     <section class="hero">
-      <h1>Clínica Canadiense · Pediatría y desarrollo en Punta del Este</h1>
-      <p>Atención cálida y basada en evidencia para cada etapa del crecimiento.</p>
-      <div class="hero__ctas">
-        <a href="https://wa.me/5980000000" class="btn btn--primary">Pedir cita</a>
-        <a href="tel:+5980000000" class="btn btn--secondary">Llamar ahora</a>
+      <div class="container">
+        <h1 class="hero__title">Clínica Canadiense · Pediatría y desarrollo en Punta del Este</h1>
+        <p class="hero__subtitle">Atención cálida y basada en evidencia para cada etapa del crecimiento.</p>
+        <div class="hero__ctas">
+          <a href="https://wa.me/5980000000" class="btn btn--primary">Pedir cita</a>
+          <a href="tel:+5980000000" class="btn btn--secondary">Llamar ahora</a>
+        </div>
       </div>
     </section>
 
     <section id="servicios" class="section">
       <div class="container">
         <h2>Servicios</h2>
-        <div class="grid grid--2">
+        <div class="grid grid--2 grid--4">
           <div class="card">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D52B1E" stroke-width="2" fill="none"/></svg>
             <h3>Pediatría</h3>
@@ -68,7 +68,7 @@
       </div>
     </section>
 
-    <section id="especialidades" class="section">
+    <section id="casos" class="section">
       <div class="container">
         <h2>Casos frecuentes</h2>
         <ul class="grid">
