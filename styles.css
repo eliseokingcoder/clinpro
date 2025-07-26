@@ -182,3 +182,19 @@ blockquote.testimonial::before{content:'\201C';font-size:4rem;position:absolute;
 [ ] Estilos de impresión básicos.
 [ ] Comentarios por sección y nombres de clase consistentes.
 ]*/
+/* === Top Bar & Skip Link === */
+.top-bar{text-align:center;background:var(--surface);font-size:.875rem;padding-block:var(--space-8);}
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;}
+.skip-link:focus{left:var(--space-16);top:var(--space-16);width:auto;height:auto;background:var(--brand);color:#fff;padding:var(--space-8);border-radius:var(--radius-8);}
+
+/* === Team Grid === */
+.team{display:flex;flex-wrap:wrap;gap:var(--space-24);justify-content:center;}
+
+/* === Footer Columns === */
+.footer-cols{display:flex;flex-wrap:wrap;gap:var(--space-24);}
+
+/* === CTA Final === */
+.cta-final{text-align:center;background:var(--surface);padding-block:var(--space-40);}
+
+/* === Badges Group === */
+.badges{display:flex;gap:var(--space-8);justify-content:center;margin-top:var(--space-16);flex-wrap:wrap;}

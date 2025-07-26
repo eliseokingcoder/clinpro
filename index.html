@@ -11,7 +11,7 @@
   <meta property="og:locale" content="es_UY">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23D52B1E' d='M12 2l1.09 4.36L17 7l-3.45 2.83L14 14l-2-1.5L10 14l.45-4.17L7 7l3.91-.64L12 2z'/%3E%3C/svg%3E">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,85 +32,136 @@
   </script>
 </head>
 <body>
-  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
-  <!-- Header -->
-  <header>
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+  <header class="header">
     <div class="top-bar">Lunes a viernes 9-18 h · <a href="tel:+5980000000">Llamar ahora</a></div>
-    <div class="container">
+    <div class="container nav">
       <div class="logo"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l1.09 4.36L17 7l-3.45 2.83L14 14l-2-1.5L10 14l.45-4.17L7 7l3.91-.64L12 2z"/></svg>Clínica Canadiense</div>
-      <nav aria-label="Principal">
-        <ul>
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav__list">
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#especialidades">Especialidades</a></li>
           <li><a href="#equipo">Equipo</a></li>
           <li><a href="#confianza">Confianza</a></li>
-          <li><a href="#preguntas">Preguntas</a></li>
+          <li><a href="#faq">Preguntas</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
-      <a href="https://wa.me/5980000000" class="btn btn-primary">Pedir cita</a>
+      <a href="https://wa.me/5980000000" class="btn btn--primary">Pedir cita</a>
     </div>
   </header>
 
-  <main id="contenido">
-    <!-- Hero -->
+  <main id="main">
     <section class="hero" id="hero">
-      <h1>Clínica Canadiense · Pediatría y desarrollo en Punta del Este</h1>
-      <p>Atención cálida y basada en evidencia para cada etapa del crecimiento.</p>
-      <div class="actions">
-        <a href="https://wa.me/5980000000" class="btn btn-primary">Pedir cita</a>
-        <a href="tel:+5980000000" class="btn btn-secondary">Llamar ahora</a>
+      <h1 class="hero__title">Clínica Canadiense · Pediatría y desarrollo en Punta del Este</h1>
+      <p class="hero__subtitle">Atención cálida y basada en evidencia para cada etapa del crecimiento.</p>
+      <div class="hero__ctas">
+        <a href="https://wa.me/5980000000" class="btn btn--primary">Pedir cita</a>
+        <a href="tel:+5980000000" class="btn btn--secondary">Llamar ahora</a>
       </div>
       <div class="badges">
         <span class="badge">+10 años de experiencia</span>
         <span class="badge">Equipo interdisciplinario</span>
         <span class="badge">Seguimiento a familias</span>
       </div>
-      <svg class="decor" aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#D52B1E" points="100,0 100,100 0,100"/></svg>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios">
-      <h2>Servicios</h2>
-      <div class="grid">
-        <div class="card"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D52B1E" stroke-width="2" fill="none"/></svg><h3>Pediatría</h3><p>Control y tratamiento integral.</p><a href="#" class="btn btn-secondary">Ver detalle</a></div>
-        <div class="card"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" stroke="#D52B1E" stroke-width="2" fill="none"/></svg><h3>Niño sano</h3><p>Controles periódicos de desarrollo.</p><a href="#" class="btn btn-secondary">Ver detalle</a></div>
-        <div class="card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2v20" stroke="#D52B1E" stroke-width="2"/><path d="M5 12h14" stroke="#D52B1E" stroke-width="2"/></svg><h3>Vacunas</h3><p>Calendario completo y seguro.</p><a href="#" class="btn btn-secondary">Ver detalle</a></div>
-        <div class="card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" stroke="#D52B1E" stroke-width="2" fill="none"/></svg><h3>Fonoaudiología</h3><p>Evaluación y tratamiento del habla.</p><a href="#" class="btn btn-secondary">Ver detalle</a></div>
-        <div class="card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 12h12" stroke="#D52B1E" stroke-width="2"/><path d="M12 6v12" stroke="#D52B1E" stroke-width="2"/></svg><h3>Psicopedagogía</h3><p>Apoyo al aprendizaje escolar.</p><a href="#" class="btn btn-secondary">Ver detalle</a></div>
-        <div class="card"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke="#D52B1E" stroke-width="2" fill="none"/></svg><h3>Psicomotricidad</h3><p>Desarrollo motor y emocional.</p><a href="#" class="btn btn-secondary">Ver detalle</a></div>
-        <div class="card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 6h8v12H8z" stroke="#D52B1E" stroke-width="2" fill="none"/></svg><h3>Psicología</h3><p>Apoyo emocional para niños.</p><a href="#" class="btn btn-secondary">Ver detalle</a></div>
-        <div class="card"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6h12v12H6z" stroke="#D52B1E" stroke-width="2" fill="none"/></svg><h3>Fisioterapia</h3><p>Rehabilitación y bienestar físico.</p><a href="#" class="btn btn-secondary">Ver detalle</a></div>
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2>Servicios</h2>
+        <div class="grid grid--cols-2">
+          <div class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#D52B1E" stroke-width="2" fill="none"/></svg>
+            <h3 class="card__title">Pediatría</h3>
+            <p class="card__desc">Control y tratamiento integral.</p>
+            <a href="#" class="card__cta">Ver detalle</a>
+          </div>
+          <div class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" stroke="#D52B1E" stroke-width="2" fill="none"/></svg>
+            <h3 class="card__title">Niño sano</h3>
+            <p class="card__desc">Controles periódicos de desarrollo.</p>
+            <a href="#" class="card__cta">Ver detalle</a>
+          </div>
+          <div class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2v20" stroke="#D52B1E" stroke-width="2"/><path d="M5 12h14" stroke="#D52B1E" stroke-width="2"/></svg>
+            <h3 class="card__title">Vacunas</h3>
+            <p class="card__desc">Calendario completo y seguro.</p>
+            <a href="#" class="card__cta">Ver detalle</a>
+          </div>
+          <div class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" stroke="#D52B1E" stroke-width="2" fill="none"/></svg>
+            <h3 class="card__title">Fonoaudiología</h3>
+            <p class="card__desc">Evaluación y tratamiento del habla.</p>
+            <a href="#" class="card__cta">Ver detalle</a>
+          </div>
+          <div class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 12h12" stroke="#D52B1E" stroke-width="2"/><path d="M12 6v12" stroke="#D52B1E" stroke-width="2"/></svg>
+            <h3 class="card__title">Psicopedagogía</h3>
+            <p class="card__desc">Apoyo al aprendizaje escolar.</p>
+            <a href="#" class="card__cta">Ver detalle</a>
+          </div>
+          <div class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke="#D52B1E" stroke-width="2" fill="none"/></svg>
+            <h3 class="card__title">Psicomotricidad</h3>
+            <p class="card__desc">Desarrollo motor y emocional.</p>
+            <a href="#" class="card__cta">Ver detalle</a>
+          </div>
+          <div class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M8 6h8v12H8z" stroke="#D52B1E" stroke-width="2" fill="none"/></svg>
+            <h3 class="card__title">Psicología</h3>
+            <p class="card__desc">Apoyo emocional para niños.</p>
+            <a href="#" class="card__cta">Ver detalle</a>
+          </div>
+          <div class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6h12v12H6z" stroke="#D52B1E" stroke-width="2" fill="none"/></svg>
+            <h3 class="card__title">Fisioterapia</h3>
+            <p class="card__desc">Rehabilitación y bienestar físico.</p>
+            <a href="#" class="card__cta">Ver detalle</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Especialidades -->
-    <section id="especialidades">
-      <h2>Casos frecuentes</h2>
-      <ul class="grid">
-        <li>Fiebre y control de infecciones</li>
-        <li>Problemas respiratorios</li>
-        <li>Alimentación y nutrición</li>
-        <li>Desarrollo y estimulación</li>
-        <li>Trastornos del sueño</li>
-      </ul>
-    </section>
-
-    <!-- Equipo -->
-    <section id="equipo">
-      <h2>Equipo</h2>
-      <div class="team">
-        <div class="member"><svg aria-hidden="true"><rect width="100%" height="100%" fill="#E6E8EB"/></svg><h3>Dr. José Pérez</h3><p>Pediatra · MP 12345</p></div>
-        <div class="member"><svg aria-hidden="true"><rect width="100%" height="100%" fill="#E6E8EB"/></svg><h3>Dra. Ana Gómez</h3><p>Fonoaudióloga · MP 67890</p></div>
-        <div class="member"><svg aria-hidden="true"><rect width="100%" height="100%" fill="#E6E8EB"/></svg><h3>Lic. Laura Díaz</h3><p>Psicóloga · MP 11121</p></div>
+    <section id="especialidades" class="section">
+      <div class="container">
+        <h2>Casos frecuentes</h2>
+        <ul class="grid">
+          <li class="chip">Fiebre y control de infecciones</li>
+          <li class="chip">Problemas respiratorios</li>
+          <li class="chip">Alimentación y nutrición</li>
+          <li class="chip">Desarrollo y estimulación</li>
+          <li class="chip">Trastornos del sueño</li>
+        </ul>
       </div>
     </section>
 
-    <!-- Confianza -->
-    <section id="confianza">
-      <h2>Confianza</h2>
-      <div class="trust">
-        <blockquote>“Nos explicaron todo con paciencia y claridad.” — Familia S.</blockquote>
+    <section id="equipo" class="section">
+      <div class="container">
+        <h2>Equipo</h2>
+        <div class="team grid grid--cols-3">
+          <div class="pro">
+            <svg class="pro__avatar" aria-hidden="true"><rect width="100%" height="100%" fill="#E6E8EB"/></svg>
+            <h3 class="pro__name">Dr. José Pérez</h3>
+            <p class="pro__role">Pediatra · MP 12345</p>
+          </div>
+          <div class="pro">
+            <svg class="pro__avatar" aria-hidden="true"><rect width="100%" height="100%" fill="#E6E8EB"/></svg>
+            <h3 class="pro__name">Dra. Ana Gómez</h3>
+            <p class="pro__role">Fonoaudióloga · MP 67890</p>
+          </div>
+          <div class="pro">
+            <svg class="pro__avatar" aria-hidden="true"><rect width="100%" height="100%" fill="#E6E8EB"/></svg>
+            <h3 class="pro__name">Lic. Laura Díaz</h3>
+            <p class="pro__role">Psicóloga · MP 11121</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="confianza" class="section">
+      <div class="container">
+        <h2>Confianza</h2>
+        <blockquote class="testimonial">“Nos explicaron todo con paciencia y claridad.” — Familia S.</blockquote>
         <div class="logos">
           <svg aria-label="Alianza 1" width="80" height="40"><rect width="80" height="40" fill="#E6E8EB"/></svg>
           <svg aria-label="Alianza 2" width="80" height="40"><rect width="80" height="40" fill="#E6E8EB"/></svg>
@@ -119,39 +170,61 @@
       </div>
     </section>
 
-    <!-- Preguntas -->
-    <section id="preguntas">
-      <h2>Preguntas frecuentes</h2>
-      <div class="faq">
-        <details><summary>¿Cómo solicito una cita?</summary><p>Escríbenos por WhatsApp o llámanos para coordinar.</p></details>
-        <details><summary>¿Atienden emergencias?</summary><p>Trabajamos con centros de referencia para emergencias.</p></details>
-        <details><summary>¿Aceptan seguros de salud?</summary><p>Consúltanos por convenios y coberturas.</p></details>
-        <details><summary>¿Cuentan con vacunatorio?</summary><p>Sí, con todas las vacunas del calendario oficial.</p></details>
-        <details><summary>¿Realizan seguimiento del desarrollo?</summary><p>Nuestro equipo acompaña cada etapa del crecimiento.</p></details>
-        <details><summary>¿Brindan orientación a familias?</summary><p>Ofrecemos talleres y asesorías personalizadas.</p></details>
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq">
+          <details class="faq">
+            <summary class="faq__q">¿Cómo solicito una cita?</summary>
+            <p class="faq__a">Escríbenos por WhatsApp o llámanos para coordinar.</p>
+          </details>
+          <details class="faq">
+            <summary class="faq__q">¿Atienden emergencias?</summary>
+            <p class="faq__a">Trabajamos con centros de referencia para emergencias.</p>
+          </details>
+          <details class="faq">
+            <summary class="faq__q">¿Aceptan seguros de salud?</summary>
+            <p class="faq__a">Consúltanos por convenios y coberturas.</p>
+          </details>
+          <details class="faq">
+            <summary class="faq__q">¿Cuentan con vacunatorio?</summary>
+            <p class="faq__a">Sí, con todas las vacunas del calendario oficial.</p>
+          </details>
+          <details class="faq">
+            <summary class="faq__q">¿Realizan seguimiento del desarrollo?</summary>
+            <p class="faq__a">Nuestro equipo acompaña cada etapa del crecimiento.</p>
+          </details>
+          <details class="faq">
+            <summary class="faq__q">¿Brindan orientación a familias?</summary>
+            <p class="faq__a">Ofrecemos talleres y asesorías personalizadas.</p>
+          </details>
+        </div>
       </div>
     </section>
 
-    <!-- Llamado a la acción final -->
-    <section class="cta-final">
-      <h2>Agenda tu consulta hoy mismo</h2>
-      <a href="https://wa.me/5980000000" class="btn btn-primary">Pedir cita</a>
+    <section class="cta-final section">
+      <div class="container">
+        <h2>Agenda tu consulta hoy mismo</h2>
+        <a href="https://wa.me/5980000000" class="btn btn--primary">Pedir cita</a>
+      </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Avenida Ejemplo 123, Punta del Este, Uruguay</p>
-      <p>Email: <a href="mailto:contacto@clinicacanadiense.uy">contacto@clinicacanadiense.uy</a></p>
-      <p>Teléfono: <a href="tel:+5980000000">+598 000 0000</a></p>
-      <p>WhatsApp: <a href="https://wa.me/5980000000">Escribir por WhatsApp</a></p>
-      <p>Horario: Lunes a viernes de 9 a 18 h</p>
-      <svg aria-label="Mapa de ubicación" width="100%" height="200"><rect width="100%" height="100%" fill="#E6E8EB"/></svg>
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <ul class="contact-list">
+          <li>Avenida Ejemplo 123, Punta del Este, Uruguay</li>
+          <li>Email: <a href="mailto:contacto@clinicacanadiense.uy">contacto@clinicacanadiense.uy</a></li>
+          <li>Teléfono: <a href="tel:+5980000000">+598 000 0000</a></li>
+          <li>WhatsApp: <a href="https://wa.me/5980000000">Escribir por WhatsApp</a></li>
+          <li>Horario: Lunes a viernes de 9 a 18 h</li>
+        </ul>
+        <div class="map" aria-label="Mapa de ubicación">Mapa</div>
+      </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container footer-cols">
       <div>
         <h3>Clínica Canadiense</h3>
